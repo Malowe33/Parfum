@@ -1,0 +1,202 @@
+/** GENERAL **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+/** BOX **/
+
+.conteneur-principal{
+    height: 450px;
+    width: 600px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px 8px 8px 8px
+
+}
+
+.deux-colonnes{
+    display: inline;
+}
+
+/** IMAGE **/
+
+.conteneur-image1{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.conteneur-image2{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.parfum{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.conteneur-image1 .parfum {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.conteneur-image1:hover .parfum {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/** TEXTE **/
+
+.bloc-texte{
+    height: 400px;
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.bloc-texte p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+.nom-parfum{
+    font-family: 'Fraunces', serif;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+h1.prix{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    margin-top: 13px;
+}
+
+span.prix-base{
+    font-weight: normal;
+    text-decoration-line: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.panier{
+    background-color: hsl(158, 36%, 37%);
+    height: 50px;
+    width: 240px;
+    margin-top: 20px;
+    border-radius: 8px 8px 8px 8px;
+    position: relative;
+}
+
+.panier h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+.icone{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.a{
+    text-decoration: none;
+}
+
+/** POUR MOBILE **/
+
+@media screen and (max-width: 767px) {
+
+    .conteneur-principal{
+    height: 850px;
+    width: 350px;
+    margin-top: 25px;
+    transform: none;
+    }
+
+    .deux-colonnes {
+        display: block;
+    }
+
+    .conteneur-image1 {
+        width: 100%;
+        height: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conteneur-image2{
+        width: 100%;
+        height: 445px;
+        float: right;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    .parfum{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    }
+
+    .bloc-texte{
+        height: 100%;
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .bloc-texte p {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .nom-parfum{
+        font-size: 35px;
+    }
+
+    h1.prix{
+        margin-top: 28px;
+        font-size: 30px;
+    }
+
+    .panier{
+    height: 50px;
+    width: 285px;
+    margin-top: 28px;
+    margin-left: 10px;
+    }
+}
+
+
+
